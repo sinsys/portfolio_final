@@ -1,0 +1,30 @@
+// Reset globals
+@import './_reset.scss';
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  * {
+    box-sizing: border-box;
+  }
+  overflow-x: hidden;
+};
+
+// Colors
+$white: #FEFEFE;
+$black: #131313;
+$midGrey: #999;
+
+// Core colors
+$primary: #7DC7F0;
+$secondary: #51F056;
+$warning: #FFCE55;
+$alert: #FF5E4B;
+
+// Extended colors
+$lilac: #AAF;
+$jsYellow: #ffd93b;
+$jsYellowDark: #dbb92c;

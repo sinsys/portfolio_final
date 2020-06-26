@@ -1,0 +1,16 @@
+@import '../../base.scss';
+
+.Main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.filler {
+  height: 100vh;
+  background: #131313;
+  background-image: radial-gradient(
+    circle at bottom left,
+    #131313 25%, 
+    #333333 100%
+  );
+}

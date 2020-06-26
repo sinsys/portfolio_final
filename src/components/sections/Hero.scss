@@ -1,0 +1,62 @@
+@import '../../base.scss';
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('../../assets/images/hero_background_compressed.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  .Hero-image {
+    display: block;
+    text-align: center;
+  }
+  .Hero-image img {
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 66%;
+    border-radius: 50% 50% 0 50%;
+    border: 0.5rem solid rgba(255,255,255,0.25);
+    box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.5);
+  }
+  .Hero-title {
+    font-size: 2rem;
+    text-align: right;
+  }
+  .Hero-description {
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    text-align: right;
+  }
+  .js-one {
+    color: $jsYellow;  
+  }
+  .js-two {
+    color: $jsYellowDark;
+  }
+  .blue {
+    color: $primary;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .Hero {
+    .Hero-title {
+      font-size: 2.5rem;
+    }
+    .Hero-description {
+      font-size: 1.25rem;
+    }
+    .Hero-image img {
+      border: 1rem solid rgba(255,255,255,0.25);
+    }
+  }
+};
