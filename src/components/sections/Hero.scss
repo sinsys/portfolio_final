@@ -13,8 +13,19 @@
   background-position: center center;
   background-attachment: fixed;
   .Hero-image {
+    // Animation defaults
+    opacity: 0;
+    margin-bottom: 200px;
+    // Animation defaults
+    left: 0;
     display: block;
     text-align: center;
+  }
+  .Hero-text {
+    // Animation defaults
+    opacity: 0;
+    transform: scaleY(0);
+    // Animation defaults
   }
   .Hero-image img {
     padding: 1rem;
