@@ -11,7 +11,9 @@ const Main = () => {
   return (
     <div className="Main">
       <Hero />
-      <div className="filler">Hi</div>
+      <div className="filler">
+        <h2>About Me</h2>
+      </div>
       <Hero />
 
     </div>

@@ -16,8 +16,9 @@ html, body {
 // Colors
 $white: #FEFEFE;
 $black: #131313;
+$lightGrey: #CCC;
 $midGrey: #999;
-
+$darkGrey: #666;
 // Core colors
 $primary: #7DC7F0;
 $secondary: #51F056;
@@ -28,3 +29,20 @@ $alert: #FF5E4B;
 $lilac: #AAF;
 $jsYellow: #ffd93b;
 $jsYellowDark: #dbb92c;
+
+// Helpers
+.no-mobile {
+  display: none !important;
+}
+.no-desktop {
+  display: block !important;
+}
+
+@media screen and (min-width: 420px) {
+  .no-mobile {
+    display: block !important;
+  }
+  .no-desktop {
+    display: none !important;
+  }
+}
