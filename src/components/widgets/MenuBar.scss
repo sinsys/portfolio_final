@@ -1,0 +1,45 @@
+@import '../../base.scss';
+
+.MenuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.75);
+
+  .MenuBar-title h1 {
+    display: inline;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .MenuBar-nav {
+    display: flex;
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+      color: $white;
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .MenuBar-hamburger {
+    border: 0.1rem solid $darkGrey;
+    color: $white;
+    fill: $darkGrey;
+    border-radius: 5px;
+    padding: 0.5rem;
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+}

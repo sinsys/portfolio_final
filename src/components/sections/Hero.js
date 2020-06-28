@@ -11,6 +11,10 @@ const Hero = () => {
     <section className="Hero">
       <motion.div 
         className="Hero-image"
+        style={{
+          opacity: 0,
+          marginBottom: 200
+        }}
         animate={{ 
           opacity: 1,
           marginBottom: 0 
@@ -24,14 +28,16 @@ const Hero = () => {
         style={{
           opacity: 0,
           scaleY: 0,
-          skewX: 30,
-          marginRight: -200
+          skewX: 15,
+          skewY: -15,
+          marginLeft: -200
         }}
         animate={{
           opacity: 1,
           scaleY: 1,
           skewX: 0,
-          marginRight: 0
+          skewY: 0,
+          marginLeft: 0
         }}
         transition={{ duration: 1.0, delay: 1.0 }}
       >

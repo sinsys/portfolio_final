@@ -7,10 +7,20 @@
 
 .filler {
   height: 100vh;
-  background: #131313;
+  background: #333;
   background-image: radial-gradient(
     circle at bottom left,
-    #131313 25%, 
-    #333333 100%
+    $lightGrey 25%, 
+    $lilac 100%
   );
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.75);
+  h2 {
+    color: $black;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  padding: 1rem;
 }
