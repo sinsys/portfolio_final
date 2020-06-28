@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-  motion,
-  useViewportScroll,
-  useSpring,
-  useTransform
-} from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import library from 'icons/fontawesome';
+import 'icons/fontawesome';
 
 import './MenuBar.scss';
 
@@ -26,7 +20,7 @@ const MenuBar = () => {
         <a href="/">Connect</a>
       </nav>
       <div className="MenuBar-hamburger no-desktop">
-        <FontAwesomeIcon icon={['fa', 'bars']} size="lg" />
+        <FontAwesomeIcon icon={['fa', 'bars']} size="2x" />
       </div>
     </div>
   )
