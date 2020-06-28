@@ -11,9 +11,9 @@ import './App.scss';
 function App() {
 
   const maximizableElement = useRef(null);
-  let [isFullscreen, setIsFullscreen] = useState(false);
+  let isFullscreen, setIsFullscreen;
   let errorMessage;
-  
+
   try {
     [isFullscreen, setIsFullscreen] = useFullscreenStatus(maximizableElement);
   } catch (e) {
