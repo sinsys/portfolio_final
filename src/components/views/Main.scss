@@ -6,12 +6,12 @@
 }
 
 .filler {
-  height: 100vh;
+  height: 50vh;
   background: #333;
   background-image: radial-gradient(
     circle at bottom left,
     $lightGrey 25%, 
-    $lilac 100%
+    $white 100%
   );
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;

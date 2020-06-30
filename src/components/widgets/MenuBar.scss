@@ -36,8 +36,16 @@
     color: $white;
     fill: $darkGrey;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 500ms ease;
     span {
       margin-right: 0.5rem;
+    }
+    &.isOpen {
+      transform: scale(2) translate(2rem, 0);
+      svg, path {
+        fill: $black;
+      }
     }
   }
 }

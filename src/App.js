@@ -1,31 +1,24 @@
 // Root - App
-import React, { useRef, useState } from 'react';
-import Router from 'routers/Router';
+import React from 'react';
+import MenuDrawer from 'components/widgets/MenuDrawer';
 import MenuBar from 'components/widgets/MenuBar';
+import Router from 'routers/Router';
 
-import useFullscreenStatus from 'hooks/fullscreen';
+import { AppContextProvider } from 'contexts/AppContext';
 
 // Files / Assets
 import './App.scss';
 
 function App() {
 
-  const maximizableElement = useRef(null);
-  let isFullscreen, setIsFullscreen;
-  let errorMessage;
-
-  try {
-    [isFullscreen, setIsFullscreen] = useFullscreenStatus(maximizableElement);
-  } catch (e) {
-    errorMessage = "Fullscreen not supported";
-    isFullscreen = false;
-    setIsFullscreen = undefined;
-  }
-
   return (
-    <div className="App" ref={maximizableElement}>
-      <MenuBar />
-      <Router />
+    <div className="App">
+      <AppContextProvider>
+        <MenuDrawer />
+        <MenuBar />
+        <Router />
+      </AppContextProvider>
+
     </div>
   );
 }
